@@ -1,16 +1,12 @@
 /*
 Assignment 1;
 Titus Wen
-
- */
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Scanner;
+*/
+import java.util.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+
 public class hw1{
     public static void main(String[] args) throws Exception{
 
@@ -31,43 +27,27 @@ public class hw1{
         ArrayList<String> sort = new ArrayList<>();
         sort(arr,sort);
 
-        //inserts sorted name into linked list
-        for(String names: sort){
-            list.insert(names);
-        }
-
-        //prints backwards in order to get names in ascending order
-        //list.printAllBackwards();
-
         //Created hashmap to count amount of times artist name shows up
         HashMap<String, Integer> map = new HashMap<>();
         countArtist(sort,map);
 
-        //Creates arraylist with set of names in array (no duplicate names)
-        ArrayList<String> sortedNameSet = new ArrayList<>(map.keySet());
-
-        //sorts the name into ascending order
-        sortedNameSet.sort(String.CASE_INSENSITIVE_ORDER);
-
-        //prints out names & number of times the artist showed up in the list
-        for(String names: sortedNameSet){
-            System.out.print(names + " ");
-            System.out.println(map.get(names));
+        //adds names (without repetition) into linked list
+        ArrayList<String> orderedNameSet = new ArrayList<>(map.keySet());
+        orderedNameSet.sort(String.CASE_INSENSITIVE_ORDER);
+        for(String names: orderedNameSet){
+            list.insert(names);
         }
 
         //prints Array to file
         printArrayToFile(arr);
 
-        //prints Artist and amount of times they show up in the array
-        printArtistAndCountToFile(map,sortedNameSet);
+        //prints Artist and amount of times they show up in the array using linked list
+        printArtistAndCountToFile(map,list);
 
     }
 
     //accepts 2d array as parameter and reads in data from xls file into array
     public static void readFile(String[][] arr, String fileName) throws Exception{
-
-        //original file scanner
-        //Scanner file = new Scanner(new File("../data/list.xls"));
 
         Scanner file = new Scanner(new File(fileName));
 
@@ -146,15 +126,16 @@ public class hw1{
         output.close();
     }
 
-    //uses hashmap and sorted name set to print out data to file
-    public static void printArtistAndCountToFile(HashMap<String, Integer> map, ArrayList<String> sortedNameSet)throws Exception{
+    //uses hashmap and linked list to print out data to file
+    public static void printArtistAndCountToFile(HashMap<String, Integer> map, TopStreamingArtists list)throws Exception{
         PrintStream output = new PrintStream(new FileOutputStream(new File("../output/ArtistNamesAndCount.txt")));
         output.printf("%-30s | %15s%n%n" , "Artist Name", "Number of appearances on top 200");
-        for(String names: sortedNameSet){
-            output.printf("%-30s %10d%n", names ,map.get(names));
+        Artist node = list.getLast();
+        while(node != null){
+            output.printf("%-30s %10d%n", node.toString() , map.get(node.toString()));
+            node = node.getPrevious();
         }
         output.close();
     }
-
 
 }

@@ -46,6 +46,16 @@ public class TopStreamingArtists {
             current = current.getPrevious();
         }
     }
+    
+    //returns first node
+    public Artist getFirst(){
+        return first;
+    }
+    
+    //returns last node
+    public Artist getLast(){
+        return last;
+    }
 }
 
 
