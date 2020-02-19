@@ -7,7 +7,7 @@
      When promted, type filename including the extention as such; FILENAME.csv <br>
      Output:<br>
      2DArray.txt contains the 2D array seperated into columns <br>
-     AristNamesAndCount.txt contains the arist and how many times they appear on the list
+     AristNamesAndCount.txt contains all the arists and how many times they appear on the list
 </h5>
 <h5>
   Folder data is the location where csv files waiting to be read are stores <br>
