@@ -1,8 +1,8 @@
 <h1 align="center"> HW1 </h1>
 <h4> Program that accepts a csv file and creates two files in output folder; 2DArray.txt and ArtistNamesAndCount.txt </h4>
 <h5>
-     Usage:<br>
-     Store Spotify top 200 csv file in data folder.<br>
+     How to use:<br>
+     Save a Spotify top 200 csv file in data folder.<br>
      Run program with terminal inside the src directory as the current working directory.<br>
      When promted, type filename including the extention as such; FILENAME.csv <br>
      Output:<br>
