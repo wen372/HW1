@@ -2,6 +2,7 @@
 Assignment 1;
 Titus Wen
 */
+import java.io.FileNotFoundException;
 import java.util.*;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -12,10 +13,9 @@ public class hw1{
 
         String[][] arr = new String[200][5];
 
-        String fileName;
-
-        //fileName = "../data/list.xls";
-        fileName = "../data/regional2-14.csv";
+        //gets user input for fileName and checks if file exist
+        String fileName = getFileName();
+        fileName = "../data/" + fileName;
 
         //reads in file and separates values into 2d array
         readFile(arr, fileName);
@@ -118,9 +118,9 @@ public class hw1{
     //formats data in 2d array and prints to file
     public static void printArrayToFile(String[][] arr) throws Exception{
         PrintStream output = new PrintStream(new FileOutputStream(new File("../output/2DArray.txt")));
-        output.printf("%-9s|%-60s|%-25s|%-9s|%s%n%n" , "Position","Track Name", " Artist" , "Streams", "URL ");
+        output.printf("%-9s|%-70s|%-30s|%-9s|%s%n%n" , "Position","Track Name", " Artist" , "Streams", "URL ");
         for(int i=0; i<200; i++){
-            output.printf("%-9s %-60s %-25s %-9s %s%n",arr[i][0],arr[i][1],arr[i][2],arr[i][3],arr[i][4]);
+            output.printf("%-9s %-70s %-30s %-9s %s%n",arr[i][0],arr[i][1],arr[i][2],arr[i][3],arr[i][4]);
         }
         //closes PrintStream
         output.close();
@@ -138,4 +138,24 @@ public class hw1{
         output.close();
     }
 
+    //allows for user input for name of file
+    public static String getFileName(){
+        Scanner in = new Scanner(System.in);
+        String fileName = "";
+        boolean foundFile = false;
+        while(!foundFile) {
+            try {
+
+                System.out.println("Enter file name: ");
+                fileName = in.next();
+                fileName = "../data/" + fileName;
+                Scanner testFile = new Scanner(new File(fileName));
+                foundFile = true;
+            } catch (FileNotFoundException e) {
+                System.out.println("No such file, check name and try again.");
+            }
+        }
+        in.close();
+        return fileName;
+    }
 }
