@@ -1,22 +1,22 @@
 Artist Name                    | Number of appearances on top 200
 
-5 Seconds of Summer                     1
-A Boogie Wit da Hoodie                  6
+5 Seconds of Summer                     2
+A Boogie Wit da Hoodie                  2
 Alan Walker                             1
 Alec Benjamin                           1
 Ali Gatie                               2
-Ant Saunders                            1
+Anne-Marie                              1
 Anuel AA                                2
 Arcangel                                1
 Ariana Grande                           2
 Arizona Zervas                          1
 Ava Max                                 1
 Bad Bunny                               3
+Bazzi                                   1
 benny blanco                            1
-Billie Eilish                           9
+Billie Eilish                          11
 blackbear                               2
 BROCKHAMPTON                            1
-Bruno Mars                              1
 BTS                                     1
 Camila Cabello                          1
 Camilo                                  1
@@ -26,17 +26,18 @@ DaBaby                                  3
 Daddy Yankee                            2
 Dalex                                   2
 Dan + Shay                              1
+Dean Lewis                              1
 Dimelo Flow                             1
 Doja Cat                                1
+Dominic Fike                            1
 Don Toliver                             1
 Drake                                   1
 Dua Lipa                                2
-Ed Sheeran                              7
+Ed Sheeran                              6
 Ellie Goulding                          1
 Eminem                                  2
 Future                                  1
 G-Eazy                                  1
-Gzuz                                    1
 Halsey                                  2
 Harry Styles                            3
 Henrique & Juliano                      1
@@ -47,15 +48,15 @@ JACKBOYS                                1
 James Arthur                            1
 Jhay Cortez                             2
 John Legend                             1
-Joji                                    1
+Joji                                    2
 Joker Bra                               1
-Jonas Brothers                          2
+Jonas Brothers                          3
 JP Saxe                                 1
 Juice WRLD                              3
-Justin Bieber                          17
+Justin Bieber                          15
 KAROL G                                 1
-Khalid                                  1
-Kina                                    1
+Khalid                                  2
+Kina                                    2
 Kygo                                    2
 Lady Gaga                               1
 Lauv                                    1
@@ -75,10 +76,12 @@ Marshmello                              1
 MEDUZA                                  2
 Migos                                   1
 Mustard                                 1
-Myke Towers                             1
+Myke Towers                             2
 Niall Horan                             1
 Nicky Jam                               2
 Noah Cyrus                              1
+Olivia Rodrigo                          1
+Panic! At The Disco                     1
 Polo G                                  1
 Post Malone                             6
 Powfu                                   1
@@ -90,24 +93,24 @@ Rich Music LTD                          2
 Roddy Ricch                             2
 SAINt JHN                               1
 Sam Smith                               4
-Samra                                   1
 Sech                                    1
 Selena Gomez                            2
 SHAED                                   1
 Shakira                                 1
-Shawn Mendes                            1
+Shawn Mendes                            2
 Stormzy                                 1
 Surfaces                                1
 Tainy                                   1
-Tame Impala                             9
+Tame Impala                             3
 Taylor Swift                            2
 The Black Eyed Peas                     1
-The Police                              1
+The Chainsmokers                        1
 The Weeknd                              2
+TOKYO’S REVENGE                         1
 Tones and I                             2
 Travis Scott                            3
 Trevor Daniel                           1
 Tyga                                    1
-XXXTENTACION                            2
+XXXTENTACION                            3
 Y2K                                     1
 YNW Melly                               1
